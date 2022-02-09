@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD_PRACTICE(HTML,CSS,JS)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> <h1>CREATE READ UPDATE DELETE</h1>
+    <h2>SONU SINGH</h2>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onSubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">Product Code</label>
+                        <input type="text" name="ProductCode" id="ProductCode">
+                    </div>
+                    <div>
+                        <label for="product">Product Name</label>
+                        <input type="text" name="Product" id="Product">
+                    </div>
+                    <div>
+                        <label for="Quantity">Quantity</label>
+                        <input type="number" name="Quantity" id="Quantity">
+                    </div>
+                    <div>
+                        <label for="PerPrice">Price</label>
+                        <input type="number" name="Price" id="PerPrice">
+                    </div>
+                    <div class="form_action..button">
+                        <input type="Submit" value="Submit">
+                        <input type="Reset" value="Reset">
+                    </div>
+
+                </form>
+                <td>
+                    <table class="list" id="storeList">
+                        <tbody>
+                        <thead>
+                            <tr>
+                                <th>Product Code</th>
+                                <th>Product</th>
+                                <th>Quantity</th>
+                                <th>PerPrice</th>
+                            </tr>
+                        </thead>
+                        
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script src="index.js"></script>
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

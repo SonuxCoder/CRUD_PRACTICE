@@ -1,0 +1,80 @@
+* {
+    padding: 0%;
+    margin: 0%;
+  }
+  body {
+    background-image: url(disco-dba865f1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  h1 {
+    text-align: center;
+    margin: 20px 20px;
+    color: #f0f8f6aa;
+  }
+  h2 {
+    text-align: center;
+    margin: 20px 20px;
+    color: #cff0e7;
+  }
+  table {
+    width: 80%;
+    margin: 40px auto;
+    background: rgb(124, 154, 167);
+  }
+  table.list {
+    text-align: center;
+    width: 100%;
+  }
+  td {
+    border: 1px solid rgb(284, 200, 200);
+    text-align: left;
+    padding: 8px 15px;
+  }
+  tr:nth-child(even),
+  table.list thead > tr {
+    background-color: rgb(267, 200, 200);
+  }
+  input[type="text"],
+  input[type="number"] {
+    width: 91%;
+    padding: 10px 18px;
+    margin: 6px 0;
+    display: inline-block;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 4px;
+  }
+  input[type="Submit"],
+  input[type="Reset"] {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1 rem;
+    cursor: pointer;
+    outline: none;
+  }
+  input[type="Submit"]:hover {
+    background: #4b99d8;
+  }
+  input[type="Reset"]:hover {
+    background: #4b99d8;
+  }
+  button {
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1 rem;
+    cursor: pointer;
+    outline: none;
+  }
+  button:hover {
+    background: #4b99d8;
+  }
+  
